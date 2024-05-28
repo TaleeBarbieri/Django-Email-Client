@@ -6,7 +6,7 @@ authors = ["TaleeBarbieri <barbieri.talee@gmail.com>"]
 packages = [{include = "email_client", from='src'}]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 django = "^5.0.6"
 requests = "^2.32.2"
 
