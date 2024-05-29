@@ -4,7 +4,7 @@
 !*.example
 !.python-version
 !.pre-commit-config.yaml
-
+venv/
 *.private.env.json
 
 *.sqlite3
