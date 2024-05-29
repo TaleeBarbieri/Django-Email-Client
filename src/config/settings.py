@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-#*gr@08h*voqvl0)q4jc1pp758zlg8rz0$(+llkm_#jsi-n)--
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'email_client',
+
 ]
 
 MIDDLEWARE = [
@@ -116,3 +118,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'email_client.CustomUser'
