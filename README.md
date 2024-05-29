@@ -8,7 +8,7 @@ This Django Email Client uses **Django 5**, **HTML 5**, **CSS 3**, **Bootstrap 5
 
 - [Installation](#installation)
 - [Run the application](#run-the-application)
-- [URL to View the website](#URl to view the-application)
+- [View the website](#URL-to-view-the-application)
 - [Copyright and License](#copyright-and-license)
 
 
