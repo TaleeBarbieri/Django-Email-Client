@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.contrib.auth import views as auth_views
+from email_client.views import InboxView, CustomLoginView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('inbox/', InboxView.as_view(), name="inbox"),
+    path('login/', CustomLoginView.as_view(), name='login'),
+
 ]

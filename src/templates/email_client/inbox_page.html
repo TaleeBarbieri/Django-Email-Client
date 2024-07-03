@@ -1,0 +1,17 @@
+{% extends 'email_client/base.html' %}
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% block title %}<title>Inbox</title>{%endblock%}
+
+<h1> Inbox </h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <div class="form-actions">
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+{% endblock %}

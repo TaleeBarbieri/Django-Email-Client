@@ -1,0 +1,15 @@
+{% extends 'email_client/base.html' %}
+{% block content %}
+
+{% block title %}<title>Login</title>{%endblock%}
+
+<center><header><h1>LOGIN</h1></header></center>
+
+<form method='POST'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="button" type="submit" value="Register">
+</form>
+
+
+{% endblock %}
